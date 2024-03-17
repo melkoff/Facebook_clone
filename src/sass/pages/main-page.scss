@@ -7,14 +7,21 @@
       width: 48%;
 
       .story-gallery {
+         display: flex;
+         overflow-x: hidden;
+         scroll-snap-type: x mandatory;
+         cursor: grab;
          .story {
-            flex-basis: 18%;
+            flex-shrink: 0;
+            width: 18%;
+            margin: 0 10px;
+            scroll-snap-align: start;
             padding-top: 32%;
             position: relative;
             background-position: center;
             background-size: cover;
             border-radius: 10px;
-
+            cursor: pointer;
             img {
                position: absolute;
                width: 45px;
