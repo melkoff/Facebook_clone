@@ -10,6 +10,7 @@
          display: flex;
          overflow-x: hidden;
          scroll-snap-type: x mandatory;
+         animation: fadeInDown 1s;
          cursor: grab;
          .story {
             flex-shrink: 0;
@@ -28,7 +29,16 @@
                border-radius: 50%;
                top: 10px;
                left: 10px;
-               border-radius: 5px solid #626262;
+               border: 3px solid #1876f2;
+            }
+            .story-active {
+               position: absolute;
+               width: 45px;
+               top: unset;
+               left: 50%;
+               bottom: 40px;
+               transform: translate(-50%);
+               border: 0;
             }
 
             p {

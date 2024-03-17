@@ -1,3 +1,5 @@
+
+
 document.addEventListener('DOMContentLoaded', function () {
    const storyGallery = document.querySelector('.story-gallery');
    let isDragging = false;
@@ -14,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!isDragging) return;
       e.preventDefault();
       const x = e.type === 'touchmove' ? e.touches[0].pageX - storyGallery.offsetLeft : e.pageX - storyGallery.offsetLeft;
-      const walk = (x - startX) * 3; // Збільшуємо швидкість прокрутки
+      const walk = (x - startX) * 3;
       storyGallery.scrollTo({
          left: scrollLeft - walk,
-         behavior: 'smooth' // Додаємо плавність
+         behavior: 'smooth'
       });
    }
 
