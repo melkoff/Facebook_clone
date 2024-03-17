@@ -81,6 +81,8 @@ video {
 }
 body {
 	line-height: 1;
+	font-family: "poppins", sans-serif !important;
+	background-color: #eeedef;
 }
 body ::selection {
 	background-color: #1876f2;
@@ -93,6 +95,21 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
 	background-color: #1876f2; /* Set your desired color */
 	border-radius: 5px;
+}
+
+.online {
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		border: 2px solid #fff;
+		background: #41db51;
+	}
 }
 
 article,
