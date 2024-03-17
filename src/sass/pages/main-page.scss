@@ -4,13 +4,9 @@
    padding: 13px 5%;
 
    &__content {
-      flex-basis: 48%;
+      width: 48%;
 
       .story-gallery {
-         display: flex;
-         justify-content: space-between;
-         margin-bottom: 20px;
-
          .story {
             flex-basis: 18%;
             padding-top: 32%;
@@ -35,6 +31,7 @@
                text-align: center;
                color: #fff;
                font-size: 14px;
+               line-height: 1.2;
             }
          }
       }

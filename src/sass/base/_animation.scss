@@ -1,12 +1,4 @@
-@keyframes dashDown {
-   0% {
-      stroke-dashoffset: 200;
-   }
-   100% {
-      stroke-dashoffset: 0;
-   }
-}
-
+// Animation for left sidebar
 @keyframes fadeInLeft {
    0% {
       opacity: 0;
@@ -21,12 +13,14 @@
    }
 }
 
-@keyframes fedeInUp20px {
+// Animation for right sidebar
+@keyframes fadeInRight {
    0% {
       opacity: 0;
-      -webkit-transform: translate3d(0, 20px, 0);
-      transform: translate3d(0, 20px, 0);
+      -webkit-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
    }
+
    100% {
       opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
