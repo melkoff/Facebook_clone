@@ -4,6 +4,7 @@
       position: sticky;
       top: 70px;
       align-self: flex-start;
+      animation: fadeInLeft 1s;
       &-links {
          border-bottom: 1px solid #ccc;
          li {
