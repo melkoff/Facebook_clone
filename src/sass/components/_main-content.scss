@@ -3,32 +3,12 @@
       // content
       &-post {
          width: 100%;
-         background: #fff;
+         background: var(--bg-color);
          border-radius: 6px;
          padding: 20px;
          color: #626262;
          margin-top: 20px;
          animation: fadeInUp 1s;
-
-         .user-profile {
-            display: flex;
-            align-items: center;
-            img {
-               width: 45px;
-               border-radius: 50%;
-               margin-right: 10px;
-            }
-            .user-profile-info {
-               p {
-                  margin-bottom: 2px;
-                  font-weight: 500;
-                  color: #626262;
-               }
-               small {
-                  font-size: 12px;
-               }
-            }
-         }
 
          .post-input-container {
             padding-left: 55px;
@@ -60,10 +40,20 @@
             }
          }
       }
+      .load-more-btn {
+         display: block;
+         margin: auto;
+         cursor: pointer;
+         padding: 5px 10px;
+         border: 1px solid #9a9a9a;
+         color: #626262;
+         background: transparent;
+         border-radius: 4px;
+      }
    }
    .post-container {
       width: 100%;
-      background: #fff;
+      background: var(--bg-color);
       border-radius: 6px;
       padding: 20px;
       color: #626262;

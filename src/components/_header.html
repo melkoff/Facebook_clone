@@ -33,10 +33,61 @@
             <input type="text" placeholder="Пошук">
          </form>
 
-         <div class="user-profile online">
-            <a href="#">
-               <img src="img/vasa.jpg" alt="user">
-            </a>
+         <div class="user-profiles online" onclick="settingsMenuToggle()">
+
+            <img src="img/vasa.jpg" alt="user">
+
+         </div>
+
+      </div>
+
+      <!--SETTINGS MENU-->
+      <div class="settings-menu">
+
+         <div id="dark-theme">
+            <span></span>
+         </div>
+
+         <div class="settings-menu-container">
+
+            <div class="user-profile">
+               <img src="img/vasa.jpg" alt="persone">
+               <div class="user-profile-info">
+                  <p>Вася Мелько</p>
+                  <a href="#">Переглянути профіль</a>
+               </div>
+            </div>
+            <hr>
+
+            <div class="user-profile">
+               <img src="img/feedback.png" alt="persone">
+               <div class="user-profile-info">
+                  <p>Напишіть відгук</p>
+                  <a href="#">Допоможіть нам покращитися</a>
+               </div>
+            </div>
+            <hr>
+
+            <div class="setting-links">
+               <img src="img/setting.png" alt="settings" class="setting-icon">
+               <a href="#">Налаштування</a>
+            </div>
+
+            <div class="setting-links">
+               <img src="img/help.png" alt="settings" class="setting-icon">
+               <a href="#">Служба підтримки</a>
+            </div>
+
+            <div class="setting-links">
+               <img src="img/display.png" alt="settings" class="setting-icon">
+               <a href="#">Колір теми</a>
+            </div>
+
+            <div class="setting-links">
+               <img src="img/logout.png" alt="settings" class="setting-icon">
+               <a href="#">Вийти</a>
+            </div>
+
          </div>
 
       </div>
