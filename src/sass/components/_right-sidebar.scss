@@ -21,6 +21,7 @@
          }
          .events-btn {
             color: #1876f2;
+            cursor: pointer;
          }
       }
 
@@ -87,6 +88,11 @@
          display: flex;
          align-items: center;
          margin-bottom: 20px;
+         cursor: pointer;
+         &:hover {
+            background: #efefef;
+            border-radius: 10px;
+         }
 
          .online {
             width: 40px;
