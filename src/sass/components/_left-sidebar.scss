@@ -1,4 +1,29 @@
 .main {
+   .left-mobile-menu {
+      position: absolute;
+      display: none;
+      width: 40px;
+      height: 40px;
+      background-color: #9a9a9a;
+      top: 10%;
+      right: -8%;
+      padding: 4px;
+      svg {
+         width: 30px;
+      }
+      @media screen and (max-width: 992px) {
+         display: block;
+      }
+   }
+
+   .letf-container {
+      @media screen and (max-width: 992px) {
+         padding: 20px;
+         overflow-y: scroll;
+         height: 100vh;
+      }
+   }
+
    &__left {
       flex-basis: 25%;
       position: sticky;
@@ -15,20 +40,6 @@
          z-index: 10;
          background: white;
          width: 50%;
-         padding: 20px;
-      }
-
-      .left-mobile-menu {
-         position: absolute;
-         width: 40px;
-         height: 40px;
-         background-color: #9a9a9a;
-         top: 10%;
-         right: -8%;
-         padding: 4px;
-         svg {
-            width: 30px;
-         }
       }
 
       &-links {
