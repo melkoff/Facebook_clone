@@ -1,7 +1,6 @@
 .events-popup {
    position: fixed;
    display: none;
-   opacity: 0;
    z-index: 9999;
    top: 0;
    left: 0;
@@ -15,7 +14,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      overflow: scroll;
+      overflow-y: scroll;
       width: 60%;
       height: 80%;
       padding: 50px 20px;
@@ -28,6 +27,11 @@
       &::-webkit-scrollbar-thumb {
          background-color: #1876f2; /* Set your desired color */
          border-radius: 5px;
+      }
+      &::-webkit-scrollbar-track {
+         box-shadow: inset 0 0 5px #322f2f;
+         border-radius: 10px;
+         margin: 20px;
       }
       @media screen and (max-width: 992px) {
          width: 80%;
@@ -116,5 +120,4 @@
 
 .active-events {
    display: block;
-   opacity: 1;
 }
