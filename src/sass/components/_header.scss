@@ -5,6 +5,10 @@
    top: 0;
    z-index: 999;
 
+   @media screen and (max-width: 992px) {
+      padding: 5px 3%;
+   }
+
    .nav {
       display: flex;
       justify-content: space-between;
